@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "demodashboard-a64f9": {
+      "hosting": {
+        "appIntegracionYrey": [
+          "demodashboard-a64f9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "demodashboard-a64f9"
+  }
+}
