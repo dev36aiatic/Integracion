@@ -9,9 +9,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { AuthService } from 'src/app/auth/services/auth.service';
+import { HistoryComponent } from './pages/history/history.component';
+import { VideoComponent } from './pages/video/video.component';
+import { ProfilComponent } from './pages/profil/profil.component';
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
 
   ],
   imports: [
