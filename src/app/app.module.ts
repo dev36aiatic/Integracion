@@ -6,12 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database'
+import {AngularFireStorageModule} from '@angular/fire/storage';
 import { AuthService } from 'src/app/auth/services/auth.service';
-import { HistoryComponent } from './pages/history/history.component';
-import { VideoComponent } from './pages/video/video.component';
-import { ProfilComponent } from './pages/profil/profil.component';
+import {AngularFirestore} from '@angular/fire/firestore';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -22,10 +23,12 @@ import { ProfilComponent } from './pages/profil/profil.component';
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule
 
   ],
-  providers: [],
+  providers: [AngularFireAuth, AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

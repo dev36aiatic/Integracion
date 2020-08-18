@@ -1,3 +1,4 @@
+
 .btn-google{
   width: 100%;
 }
@@ -7,3 +8,16 @@
 .btn-login{
   width: 100%;
 }
+
+.form{
+  font-family: 'Roboto mono', monospace;
+}
+
+@media screen and (max-width: 700px) {
+  .div.responsive {
+    position :relative;
+    text-align: center;
+    float: none;
+  }
+}
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataApiService} from 'src/app/services/data-api.service';
 
 @Component({
   selector: 'app-profil',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataApi: DataApiService) { }
+
+  public profiles=[];
+  public profile='';
 
   ngOnInit(): void {
+    this.dataApi.getAllProfile().subscribe(Profile => {
+      console.log('Profiles', Profile);
+    })
   }
 
 }
