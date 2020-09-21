@@ -5,27 +5,19 @@
   <a class="nav-link" [routerLink]="['/history']" ><i class="fas fa-newspaper"></i>  History</a>
   <a class="nav-link" [routerLink]="['/profil']" ><i class="fas fa-user"></i> Profile</a>
   <a class="nav-link" [routerLink]="['/video']"><i class="fas fa-video"></i> Video</a>
-  <div class="dropdown">
-  <button class="dropdown-btn"> <i class="fas fa-tools"></i>
-    <span>
-    Options
-  </span>
-  </button>
-  <div class="dropdown-menu">
-      <a href="#"><i class="fab fa-whmcs"></i> Configuration</a>
-      <a href="#"><i class="fas fa-users-cog"></i> Advanced User</a>
-      <a href="#"><i class="fas fa-exclamation-circle"></i> About us</a>
-  </div>
-</div>
+
+
+  <a (click)=salir() class="nav-link" [routerLink]="['/salir']"><i class="fas fa-sign-out-alt"></i> Salir</a>
+
 </div>
 
 <div style="margin-left:16%">
   Yeison Alexander Rey Sepulveda
-  <div class="w3-container w3-teal">
+  <div >
     <h1>DashBoard</h1>
   </div>
 
-  <div class="w3-container">
+  <div >
   <h2>primer dashboard</h2>
 
   </div>

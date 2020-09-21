@@ -12,6 +12,7 @@ import {AngularFireDatabaseModule} from '@angular/fire/database'
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import { AuthService } from 'src/app/auth/services/auth.service';
 import {AngularFirestore} from '@angular/fire/firestore';
+import {CheckgGuard} from '../app/services/checkg.guard';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import {AngularFirestore} from '@angular/fire/firestore';
     AngularFireDatabaseModule
 
   ],
-  providers: [AngularFireAuth, AngularFirestore],
+  providers: [AngularFireAuth, AngularFirestore, CheckgGuard, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

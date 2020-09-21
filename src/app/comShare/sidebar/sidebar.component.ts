@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+import { AuthService } from '../../auth/services/auth.service';
+import { auth } from 'firebase';
+import { Observable } from 'rxjs';
+import { finalize } from 'rxjs/operators';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +12,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authSvc: AuthService) { }
 
   ngOnInit(): void {
+  }
+
+  salir(){
+    this.authSvc.logout();
+    console.log("salidooooo")
   }
 
 }
