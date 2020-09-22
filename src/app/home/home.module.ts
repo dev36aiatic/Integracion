@@ -3,14 +3,27 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { SidebarComponent} from 'src/app/comShare/sidebar/sidebar.component';
+import {NavbarComponent} from 'src/app/comShare/navbar/navbar.component';
+
+
+
+
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIcon, MatIconModule} from  '@angular/material/icon';
+
 
 
 @NgModule({
-  declarations: [HomeComponent, SidebarComponent],
+  declarations: [HomeComponent] ,
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule
+
+
 
   ]
 })

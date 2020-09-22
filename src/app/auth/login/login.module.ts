@@ -8,7 +8,7 @@ import { NavbarComponent } from 'src/app/comShare/navbar/navbar.component';
 
 
 @NgModule({
-  declarations: [LoginComponent,NavbarComponent],
+  declarations: [LoginComponent],
   imports: [
     CommonModule,
     LoginRoutingModule,

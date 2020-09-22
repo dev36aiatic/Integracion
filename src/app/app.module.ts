@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
@@ -13,10 +15,15 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
 import { AuthService } from 'src/app/auth/services/auth.service';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {CheckgGuard} from '../app/services/checkg.guard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NavbarComponent} from '../app/comShare/navbar/navbar.component';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, NavbarComponent
 
   ],
   imports: [
@@ -26,7 +33,9 @@ import {CheckgGuard} from '../app/services/checkg.guard';
     AngularFireModule.initializeApp(environment),
     AngularFireAuthModule,
     AngularFireStorageModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule,
+
 
   ],
   providers: [AngularFireAuth, AngularFirestore, CheckgGuard, AuthService],
