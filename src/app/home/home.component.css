@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -15px;
+  background: white;
+
+
+}
+
+mat-sidenav{
+  max-width: 100%;
+  background: rgb(255, 98, 92);
+  text-align: center;
+  position: relative;
+  display: block;
+  float: left;
+  height: 100%;
+  width: 200px;
+
+}
+
+mat-sidenav-content{
+  text-align: center;
+
+}
+
+mat-sidenav a{
+  margin-bottom: 2em;
+  color: black;
+}
+i{
+  color:white;
+}
+
+
+
+

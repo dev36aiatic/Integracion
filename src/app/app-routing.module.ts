@@ -3,19 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { HistoryComponent } from './pages/history/history.component';
 import { VideoComponent } from './pages/video/video.component';
 import { ProfilComponent } from './pages/profil/profil.component';
+import {CheckgGuard} from '../app/services/checkg.guard';
 
 const routes: Routes = [
 
   {
-    path:'history', component: HistoryComponent
+    path:'history', component: HistoryComponent,  canActivate: [CheckgGuard]
   },
 
   {
-    path:'video', component: VideoComponent
+    path:'video', component: VideoComponent, canActivate: [CheckgGuard]
   },
 
   {
-    path: 'profil', component:ProfilComponent
+    path: 'profil', component:ProfilComponent,  canActivate: [CheckgGuard]
   },
 
 
@@ -24,7 +25,7 @@ const routes: Routes = [
   },
 
 
-  { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
+  { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule), canActivate: [CheckgGuard]},
 
   {
     path:"**", redirectTo:('/login'), pathMatch:'full'

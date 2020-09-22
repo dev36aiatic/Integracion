@@ -69,7 +69,15 @@ input[type=password]{
   .div.responsive {
     position :relative;
     text-align: center;
-    float: none;
+
+  }
+
+  .div .form{
+    width: 100%;
+  }
+
+  .form-group{
+    width: 222px;
   }
 }
 
