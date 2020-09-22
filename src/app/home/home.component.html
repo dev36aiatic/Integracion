@@ -1,1 +1,29 @@
-<app-sidebar></app-sidebar>
+
+
+<mat-sidenav-container class="container" (backdropClick)='close()'>
+  <mat-sidenav  #sidenav mode="over" opened>
+
+    <button class="button" (click)="sidenav.toggle()">
+      <img src="../../../assets/berkLogo.jpg" width="25px" height="25px" class="d-inline-block align-top" alt="">
+    </button>
+
+    <a class="nav-link active" [routerLink]="['/login']" ><i class="fas fa-home"></i>   Home</a>
+    <a class="nav-link" [routerLink]="['/history']" ><i class="fas fa-newspaper"></i>  History</a>
+    <a class="nav-link" [routerLink]="['/profil']" ><i class="fas fa-user"></i> Profile</a>
+    <a class="nav-link" [routerLink]="['/video']"><i class="fas fa-video"></i> Video</a>
+    <a (click)=salir() class="nav-link" [routerLink]="['/salir']"><i class="fas fa-sign-out-alt"></i> Salir</a>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="cont">
+    <div class="conti">
+    <p>Mi primer DashBoard</p>
+
+    <h1>YEISON ALEXANDER REY SEPULVEDA</h1>
+    <button mat-raised-button color="warn" (click)='sidenav.toggle()'>Warn</button>
+  </div>
+  </mat-sidenav-content>
+
+
+
+</mat-sidenav-container>
+

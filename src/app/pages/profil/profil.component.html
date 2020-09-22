@@ -1,1 +1,21 @@
-<p>profil works!</p>
+<table class="table table-bordered table-responsive-sm table-responsive-md table-responsive-lg">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- Listamos los datos mediante la directiva ngFor -->
+    <tr *ngFor="let profile of Profiles">
+      <th>{{profile.$key}}</th>
+      <td>{{dato.name}}</td>
+      <td>{{dato.number}}</td>
+      <td>{{dato.address}}</td>
+    </tr>
+
+  </tbody>
+</table>

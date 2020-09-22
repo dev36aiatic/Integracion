@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AuthService } from '../auth/services/auth.service';
+import {MatToolbar} from '@angular/material/toolbar';
+import {MatSidenav} from'@angular/material/sidenav';
+import {MatIcon} from '@angular/material/icon';
+import {MatButton} from '@angular/material/button';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +13,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authSvc: AuthService) {
+
+   }
+   public user$: Observable<any> = this.authSvc.afAuth.user;
+   public user : any;
+
+   @ViewChild('sidenav') sidenav: MatSidenav;
 
   ngOnInit(): void {
   }
 
+  salir(){
+    this.authSvc.logout();
+    console.log("salidooooo")
+  }
+
+  close(){
+    this.sidenav.close();
+  }
+
+
 }
+
+
+
+

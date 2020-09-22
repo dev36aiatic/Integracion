@@ -51,8 +51,9 @@ async onGoogleLogin(){
 async onFbLogin(){
   try{
     const user =await this.authSvc.onFbLogin();
+    if(user){
     this.router.navigate(['/home']);
-
+    }
   }
   catch(error){console.log(error)}
 }
