@@ -1,14 +1,23 @@
+
+
 .container {
-  position: absolute;
+  position: block;
   top: 0;
   bottom: 0;
+  float: left;
   left: -15px;
   background: white;
+  height: 100%;
+  width: 100%;
+
 
 
 }
 
+
+
 mat-sidenav{
+
   max-width: 100%;
   background: rgb(255, 98, 92);
   text-align: center;
@@ -25,6 +34,9 @@ mat-sidenav-content{
 
 }
 
+
+
+
 mat-sidenav a{
   margin-bottom: 2em;
   color: black;
@@ -33,6 +45,37 @@ i{
   color:white;
 }
 
+.conti{
+  text-align: center;
+  float: left;
+  position: block;
+}
 
 
+
+
+
+
+
+@media only screen and (max-width:650px)
+{
+
+  .container{
+    position: relative;
+    float: left;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    }
+    .cont{
+      left: -25%;
+    }
+
+
+
+
+
+
+
+}
 

@@ -18,6 +18,8 @@ import {CheckgGuard} from '../app/services/checkg.guard';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NavbarComponent} from '../app/comShare/navbar/navbar.component';
 
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
@@ -36,6 +38,8 @@ import {NavbarComponent} from '../app/comShare/navbar/navbar.component';
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
+    MatIconModule,
+    MatToolbarModule
 
 
   ],

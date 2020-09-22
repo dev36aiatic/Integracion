@@ -10,7 +10,8 @@ import {NavbarComponent} from 'src/app/comShare/navbar/navbar.component';
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIcon, MatIconModule} from  '@angular/material/icon';
+import {MatIconModule} from  '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -21,7 +22,8 @@ import {MatIcon, MatIconModule} from  '@angular/material/icon';
     HomeRoutingModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
 
 
 

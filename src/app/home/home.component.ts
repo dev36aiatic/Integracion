@@ -3,6 +3,7 @@ import { AuthService } from '../auth/services/auth.service';
 import {MatToolbar} from '@angular/material/toolbar';
 import {MatSidenav} from'@angular/material/sidenav';
 import {MatIcon} from '@angular/material/icon';
+import {MatButton} from '@angular/material/button';
 import { Observable } from 'rxjs';
 
 @Component({

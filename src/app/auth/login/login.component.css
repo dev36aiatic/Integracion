@@ -16,10 +16,11 @@
   text-align: center;
   text-decoration: none;
   float: center;
-  margin-left: 50px;
+  margin-left: 38px;
   font-size: 10px;
   padding: 1em;
   border-radius: 8px;
+  color: cornflowerblue;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
@@ -42,6 +43,7 @@
 }
 .btn-facebook:hover{
   background-color: cornflowerblue;
+  color: white;
 }
 .btn-google:hover{
   background-color: cornflowerblue;
@@ -70,6 +72,10 @@ input[type=password]{
     position :relative;
     text-align: center;
 
+  }
+
+  .btn-facebook{
+    margin-left: 15px;
   }
 
   .div .form{
