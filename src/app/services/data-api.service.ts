@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from '@angular/fire/firestore';
-import {IntProfile} from 'src/app/interfaces/intProfile';
+import {IntProfile} from 'src/app/services/intProfile';
 import { Observable } from 'rxjs';
 
 

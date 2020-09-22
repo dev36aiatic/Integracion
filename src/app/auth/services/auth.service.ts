@@ -20,7 +20,7 @@ export class AuthService {
   {
 
     try{
-       return this.afAuth.signInWithPopup(
+       return await this.afAuth.signInWithPopup(
          new auth.GoogleAuthProvider
        );
     }
@@ -32,7 +32,7 @@ export class AuthService {
 
     try {
 
-      return this.afAuth.signInWithPopup( new auth.FacebookAuthProvider);
+      return await this.afAuth.signInWithPopup( new auth.FacebookAuthProvider);
 
     } catch (error)
     {console.log(error)

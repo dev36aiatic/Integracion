@@ -1,17 +1,69 @@
 
 .btn-google{
-  width: 100%;
+  width: 200px;
+  font-size: 10px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border-color: cornflowerblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  text-align: center;
+  text-decoration: none;
+  float: center;
 }
 .btn-facebook{
-  width: 100%;
+  border-color: cornflowerblue;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  float: center;
+  margin-left: 50px;
+  font-size: 10px;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
 .btn-login{
-  width: 100%;
+  border-color: cornflowerblue;
+  text-align: center;
+  text-decoration: none;
+  float: center;
+  top: auto;
+  width: 200px;
+  font-size: 10px;
+  border-radius: 8px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  padding: 1em;
 }
 
-.form{
-  font-family: 'Roboto mono', monospace;
+.btn-login:hover{
+  background-color: cornflowerblue;
+
 }
+.btn-facebook:hover{
+  background-color: cornflowerblue;
+}
+.btn-google:hover{
+  background-color: cornflowerblue;
+}
+
+
+
+input[type=email]{
+
+    border: 2px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+  border: 2px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+
+
 
 @media screen and (max-width: 700px) {
   .div.responsive {
